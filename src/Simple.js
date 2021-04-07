@@ -3,8 +3,9 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { getData } from "./store/action";
 
-import './simple.css';
-
+import logo from "./logo.png";
+import "./simple.css";
+console.log(logo);
 export default function Simple() {
   const info = useSelector((state) => state.info);
   const dispatch = useDispatch();
@@ -33,6 +34,7 @@ export default function Simple() {
       >
         go to other
       </button>
+      <img src={logo} alt="" />
     </div>
   );
 }
