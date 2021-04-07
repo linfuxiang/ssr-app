@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { getData } from "./store/action";
 
+import './simple.css';
+
 export default function Simple() {
   const info = useSelector((state) => state.info);
   const dispatch = useDispatch();
