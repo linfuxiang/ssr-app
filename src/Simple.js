@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getData } from "./store/action";
 
 import logo from "./logo.png";
-import "./simple.css";
+// import "./simple.css";
 console.log(logo);
 export default function Simple() {
   const info = useSelector((state) => state.info);
